@@ -1,0 +1,16 @@
+.movie-list-item-img{
+    width: 210px;
+    height: 297px;
+}
+
+.movie-list{
+    height: 400px;
+}
+
+.movie-list-item-title{
+    max-width: 230px;
+}
+
+.arrow{
+    top: 135px;
+}
