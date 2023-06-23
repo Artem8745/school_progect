@@ -624,10 +624,11 @@ button{
         max-width: 300px;
         border-radius: 4px;
         margin: 0 auto;
+        font-weight: bold;
     }
 
     .featured-desc.active{
-        font-weight: bold;
+        font-weight: normal;
     }
 
     .featured-content__button{
