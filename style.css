@@ -637,7 +637,7 @@ button{
     }
 
     .featured-content{
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('./img/mobile/f-1.JPG') 0 0 no-repeat;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('./img/mobile/f-1.jpg') 0 0 no-repeat;
     }
 
 }
