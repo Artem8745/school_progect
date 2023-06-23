@@ -27,10 +27,3 @@ $(function () {
 if (localStorage.getItem('body') == 'active') {
     $('.body').addClass('active');
   }
-
-
-if ($.cookie('mysite_sheetswitch_idx')) {
-	var idx = $.cookie('mysite_sheetswitch_idx');
-	$(".switch[rel='stylesheet']").eq(idx).attr("disabled", "");
-	$(".swatch").eq(idx).addClass("swatch_hi");
-}

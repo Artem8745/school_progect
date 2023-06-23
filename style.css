@@ -158,24 +158,6 @@ body{
     display: none;
 }
 
-.profile-container{
-    flex: 2;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.profile-text-container{
-    margin: 0 20px;
-}
-
-.profile-picture{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
 .toggle{
     width: 40px;
     height: 20px;
@@ -200,19 +182,6 @@ body{
     border-radius: 50%;
     cursor: pointer;
     transition: 0.5s ease all;
-}
-
-.sidebar{
-    width: 50px;
-    height: 100%;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
-    transition: all 0.5s ease-in-out;
 }
 
 .left-menu-icon{
@@ -449,10 +418,6 @@ button{
     color: black;
 }
 
-.sidebar.active{
-    background-color: #e9e9e9;
-}
-
 .left-menu-icon.active{
     color: black;
 }
@@ -472,26 +437,23 @@ button{
     }
 }
 
-@media only screen and (max-width: 1000000px){
-    .sidebar{
-        display: none;
-    }
-
-}
-
-@media (max-width: 787px){
+@media (max-width: 790px){
     .logo-container{
         margin: 0px 20px 0px 0px;
     }
+
+    .featured-content.active{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #e9e9e9), url('./img/mobile/fon.jpg') 0 0 no-repeat;
+    }
 }
 
-@media (max-width: 684px){
+@media (max-width: 710px){
 
     .menu-list{
         display: none;
     }
 
-    .profile-container_menu{
+    .toggle_menu{
         display: none;
     }
 
@@ -611,13 +573,10 @@ button{
 
 /* ------------------------------------------------------------------- */
 
-    .profile-container{
-        justify-content: center;
-    }
-
     .toggle{
         width: 100px;
         height: 50px;
+        margin: 0 auto;
     }
     
     .toggle-icon{
@@ -660,9 +619,25 @@ button{
         margin: 0px 0px 54px 0px;
     }
 
+    .featured-desc p{
+        backdrop-filter: blur(1px);
+        max-width: 300px;
+        border-radius: 4px;
+        margin: 0 auto;
+    }
+
+    .featured-desc.active{
+        font-weight: bold;
+    }
+
     .featured-content__button{
         width: 100%;
         display: flex;
         justify-content: center;
     }
+
+    .featured-content{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('./img/mobile/f-1.JPG') 0 0 no-repeat;
+    }
+
 }
